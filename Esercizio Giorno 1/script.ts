@@ -2,7 +2,7 @@ const costoChiamata = 0.20
 
 
 
-
+/* le interfaccie definiscono un oggetto, in modo tale da poter riutilizzare lo stesso scema più volte */
 interface Telefono {
   creditoResiduo: number;
   numeroChiamate: number;
