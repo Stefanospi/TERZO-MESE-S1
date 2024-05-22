@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+
+<h1>Lista utenti usando array</h1>
+<!--
+<div *ngIf="postArr.length == 0" class="alert alert-info">
+  Caricamento in corso
+</div> -->
+
+<table class="table" *ngIf="postArr.length > 0">
+  <tr>
+    <th>#</th>
+    <th>title</th>
+    <th>body</th>
+    <th>userId</th>
+    <th>tags</th>
+  </tr>
+
+  <tr *ngFor="let post of postArr">
+    <td>{{post.id}}</td>
+    <td>{{post.title}}</td>
+    <td>{{post.body}}</td>
+    <td>{{post.userId}}</td>
+    <td>{{post.tags}}</td>
+  </tr>
+</table>
+<hr>
+
