@@ -1,12 +1,11 @@
-<app-navbar></app-navbar>
 
-<h1>Lista utenti usando array</h1>
+<h1 class="fst-italic">Articoli:</h1>
 <!--
 <div *ngIf="postArr.length == 0" class="alert alert-info">
   Caricamento in corso
 </div> -->
 
-<table class="table" *ngIf="postArr.length > 0">
+<!-- <table class="table" *ngIf="postArr.length > 0">
   <tr>
     <th>#</th>
     <th>title</th>
@@ -16,12 +15,27 @@
   </tr>
 
   <tr *ngFor="let post of postArr">
-    <td>{{post.id}}</td>
     <td>{{post.title}}</td>
     <td>{{post.body}}</td>
     <td>{{post.userId}}</td>
     <td>{{post.tags}}</td>
   </tr>
 </table>
-<hr>
+<hr> -->
 
+<div class="card" *ngIf="postArr.length > 0">
+  <div class="card-container" *ngFor="let post of postArr">
+    <div class="card-header">
+      <span>{{ post.id }}</span
+      >{{ post.title }}
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>{{ post.body }}</p>
+        <footer class="blockquote-footer">
+          {{ post.tags }}<cite title="Source Title">{{ post.userId }}</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
