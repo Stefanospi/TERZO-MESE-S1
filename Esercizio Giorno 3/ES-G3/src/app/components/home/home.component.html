@@ -1,30 +1,11 @@
-
-<h1 class="fst-italic">Articoli:</h1>
-<!--
-<div *ngIf="postArr.length == 0" class="alert alert-info">
-  Caricamento in corso
-</div> -->
-
-<!-- <table class="table" *ngIf="postArr.length > 0">
-  <tr>
-    <th>#</th>
-    <th>title</th>
-    <th>body</th>
-    <th>userId</th>
-    <th>tags</th>
-  </tr>
-
-  <tr *ngFor="let post of postArr">
-    <td>{{post.title}}</td>
-    <td>{{post.body}}</td>
-    <td>{{post.userId}}</td>
-    <td>{{post.tags}}</td>
-  </tr>
-</table>
-<hr> -->
-
-<div class="card" *ngIf="postArr.length > 0">
-  <div class="card-container" *ngFor="let post of postArr">
+<h1 class="fst-italic mb-3 bg-secondary-subtle p-2 text-center rounded-3">
+  Articoli
+</h1>
+<div
+  class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"
+  *ngIf="postArr.length > 0"
+>
+  <div class="card" *ngFor="let post of postArr">
     <div class="card-header">
       <span>{{ post.id }}</span
       >{{ post.title }}
