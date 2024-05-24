@@ -1,0 +1,53 @@
+<div class="container-fluid mt-3">
+  <div class="row">
+    <div class="d-flex align-items-center flex-column">
+      <img
+        class="w-25 text-center rounded-3"
+        src="../../../assets/img/logo.png"
+        alt="logo"
+      />
+      <h2 class="mb-4 fst-italic">Il tuo autosalone di fiducia!</h2>
+    </div>
+    <div class="col-12 d-flex justify-content-center">
+      <ul class="d-flex justify-content-center">
+        <div class="d-flex align-items-center w-75">
+          <li class="list-unstyled mx-5" *ngFor="let logo of unBrandLogo">
+            <img src="{{ logo }}" alt="" class="img-fluid"/>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <h2 class="mb-4 fst-italic text-center">Le nostre auto:</h2>
+  <div class="row justify-content-around mt-4">
+    <div class="col-12">
+      <div class="row justify-content-around">
+        <div class="col-md-4" *ngFor="let car of randomAutos">
+          <div class="card mb-4 rounded-3">
+            <img
+              src="{{ car.modelImage }}"
+              alt="imgModel"
+              class="img-fluid rounded-3"
+            />
+            <div
+              class="card-body rounded-bottom-3"
+              [ngClass]="{
+                'bg-success': car.available,
+                'bg-danger': !car.available
+              }"
+            >
+              <h5 class="card-title text-center border-bottom mb-2">
+                {{ car.model }}
+              </h5>
+              <div class="d-flex justify-content-around mt-2">
+                <p class="card-text btn btn-primary">Anno: {{ car.year }}</p>
+                <p class="btn btn-primary">Prezzo: {{ car.price }}</p>
+                <p class="btn btn-primary" routerLink="/{{car.brand.toLowerCase()}}">Dettaglio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

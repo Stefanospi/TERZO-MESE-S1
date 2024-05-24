@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center mt-2">
+        <strong>I nostri veicoli Ford:</strong>
+      </h1>
+      <p class="bg-body-secondary fst-italic fs-5">
+        Le auto Ford combinano innovazione, prestazioni e affidabilità, offrendo
+        una vasta gamma di veicoli per soddisfare le diverse esigenze dei
+        consumatori in tutto il mondo. La continua attenzione alla tecnologia e
+        alla sicurezza, insieme a un impegno verso la sostenibilità, rende Ford
+        un marchio rilevante e rispettato nel panorama automobilistico globale.
+      </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-around mt-4">
+    <div class="col-12">
+      <div class="row justify-content-around">
+        <div class="col-md-4" *ngFor="let car of autoArr">
+          <div class="card mb-4">
+            <img
+              src="{{ car.modelImage }}"
+              alt="imgModel"
+              class="img-fluid h-100 rounded-3"
+            />
+            <div
+              class="card-body rounded-bottom-3"
+              [ngClass]="{
+                'bg-success': car.available,
+                'bg-danger': !car.available
+              }"
+            >
+              <h5 class="card-title text-center border-bottom mb-2">
+                {{ car.model }}
+              </h5>
+              <div class="d-flex justify-content-around mt-2">
+                <p class="card-text btn btn-primary">Anno: {{ car.year }}</p>
+                <p class="btn btn-primary">Prezzo: {{ car.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

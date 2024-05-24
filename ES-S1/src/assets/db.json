@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://seeklogo.com/images/F/FIAT_2007_OLD-logo-4195DE7DDB-seeklogo.com.png",
+        "model": "500L",
+        "modelImage": "https://www.kimballstock.com/pix/car/p/06/aut-51-iz0285-01p.jpg",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://seeklogo.com/images/F/FIAT_2007_OLD-logo-4195DE7DDB-seeklogo.com.png",
+        "model": "500 Abarth",
+        "modelImage": "https://www.kimballstock.com/pix/car/p/06/aut-51-iz0257-01p.jpg",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://seeklogo.com/images/F/ford-logo-CA98E97A2B-seeklogo.com.png",
+        "model": "Taurus",
+        "modelImage": "https://www.kimballstock.com/pix/car/p/01/aut-15-iz0613-01p.jpg",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://seeklogo.com/images/F/ford-logo-CA98E97A2B-seeklogo.com.png",
+        "model": "Focus",
+        "modelImage": "https://www.kimballstock.com/pix/car/p/06/aut-50-iz1080-01p.jpg",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://seeklogo.com/images/A/Audi-logo-8508C17BED-seeklogo.com.png",
+        "model": "A3",
+        "modelImage": "https://www.kimballstock.com/pix/car/p/05/aut-46-iz0056-01p.jpg",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://seeklogo.com/images/A/Audi-logo-8508C17BED-seeklogo.com.png",
+        "model": "Q7",
+        "modelImage": "https://www.kimballstock.com/pix/car/p/06/aut-51-iz0118-01p.jpg",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]
